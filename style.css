@@ -1,84 +1,206 @@
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-body{
-    height: 100vh;
-    /* background-image: url('bg.png')no-repeat; */
-    background-size: cover;
+header{
+    height: 6rem;
+    background: linear-gradient(to right, rgb(214, 214, 28) 30%,lightblue 60%,red);
+    display: flex;
     display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+}
+.im{
+    height: 3rem;
+}
+header div{
+    margin-left:1.5rem;
+}
+header div ul{
+    list-style: none;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+}
+.h:hover{
+    cursor: pointer;
+}
+.h{
+    color: white;
+}
+.world:hover{
+    transform: rotate(90deg);
+}
+.button{
+    height: 3rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    width: 100% !important;
+    margin-left: -2rem;
+    background-color: rgb(240, 95, 69);
+    color: white;
+}
+.button:hover{
+    background-color: white;
+    color:lightgreen;
+    cursor: pointer;
+}
+.rubik:hover{
+    transform:rotate(80deg);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4rem;
+   
+}
+.main div{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 2rem;
+}
+/* one */
+.one{
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 15rem;
+    width: 80%;
+    background:url('s.jfif') no-repeat;
+    background-size: cover;
+}
+.one:hover{
+    cursor: pointer;
+    background: url('s1.jpg') no-repeat;
+}
+.two{
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 15rem;
+    width: 80%;
+    background:url('s2.jfif') no-repeat;
+    background-size: cover;
+}
+.two:hover{
+    cursor: pointer;
+    background: url('s3.jfif') no-repeat;
+}
+.three{
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 15rem;
+    width: 80%;
+    background:url('s4.jfif') no-repeat;
+    background-size: cover;
+}
+.three:hover{
+    cursor: pointer;
+    background: url('s5.jfif') no-repeat;
+}
+.four{
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 15rem;
+    width: 80%;
+    background:url('s6.jfif') no-repeat;
+    background-size: cover;
+}
+.four:hover{
+    cursor: pointer;
+    background: url('s7.jfif') no-repeat;
+}
+.five{
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 15rem;
+    width: 80%;
+    background:url('s8.jfif') no-repeat;
+    background-size: cover;
+}
+.five:hover{
+    cursor: pointer;
+   
+    background: url('s9.jfif') no-repeat;
+    height: 15rem;
+    width: 80%;
+}
+.six{
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 15rem;
+    width: 80%;
+    background:url('s10.jfif') no-repeat;
+    background-size: cover;
+}
+.six:hover{
+    cursor: pointer;
+    /* height: 15rem;
+    width: 100%; */
+    border-radius: 20px;
+    background: url('s11.jpg') no-repeat;
+}
+.main div div button{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 70%;
+    height: 2rem;
+    background-color: rgb(47, 45, 45);
+    color: white;
+    outline: none;
+    border: none;
+}
+.main div div button:hover{
+    cursor: pointer;
+    background-color: darkgrey;
+}
+.main div div h6 span{
+    text-decoration: line-through;
+    margin-left: -8rem;
+}
+.main div div h6{
+    font-size: 1.1rem;
+    color: gray;
+    margin-left: -4rem;
+    margin: 0.3rem;
+}
+.main div div h4{
+    margin-left: -5rem;
+}
+.main div div .h6{
+    margin-left: -12rem;
+}
+.but img{
+    height: 2rem;
+}
+.but{
+    display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    animation: back-color 2s infinite alternate-reverse;
+    border: 1px solid rgb(102, 224, 102);
+    margin: 2rem;
+    width: 12%;
+    height: 4rem;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    background: rgb(75, 227, 75);
+    margin-top: -3rem;
+    position: fixed;
+    right: 0%;
+    bottom: -4%;
 }
-div{
-    height: 400px;
-    width: 400px;
-    /* background:linear-gradient(tomato , royalblue);  */
-    /* background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); */
-    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-    border-radius: 50%;
-    position:absolute;
-    justify-self: center;
-    z-index: -1;
-    animation:rotate infinite;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
+.but a{
+    color: white;
+    text-decoration: none;
 }
-img{
-    height: 70vh;
-    margin-left: 7rem;
-    animation: floating 4s infinite ease-in-out;
-    /* animation: falling-down 3s infinite ease-in-out; */
-    /* animation: falling-side 3s infinite ease-in-out;  */
-}
-@keyframes rotate{
-    0%{
-        transform: rotate(0deg);
-    }
-    50%{
-        transform: rotate(180deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-@keyframes floating{
-    0%{
-        transform: translateY(20px);
-    }
-    50%{
-        transform:translateY(-20px);
-    }
-    100%{
-        transform: translateY(20px);
-    }
-}
-@keyframes back-color{
-    0%{
-        background: #212121;
-        /* background-image: url('bg1.png'); */
-        background: cover;
-    }
-    100%{
-        background: white;
-    }
-}
-@keyframes falling-side{
-    0%{
-        transform:translateX(-500%);
-    }
-    100%{
-        transform: translateX(0%);
-    }
-}
-@keyframes falling-down{
-    0%{
-        transform:translateY(-500%);
-    }
-    100%{
-        transform: translateY(0%);
-    }
-} 
